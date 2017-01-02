@@ -1,0 +1,12 @@
+
+//start zookeper if not (just for learning purposes)
+
+//start kafka server if you run more than one this commnad 
+//use another propierties
+bin/kafka-server-start.sh config/server.properties
+
+//start consumer (could be created by commnad or java
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic first
+
+
+//the producer could be created by java or commandline
